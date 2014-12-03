@@ -1,0 +1,116 @@
+.fix-bottom { 
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+}
+
+@media (max-width: 767px){
+  .left-nav { 
+    display: none; 
+  }
+
+  body { 
+    padding-left: 0px; 
+  }
+
+  .navbar-fixed-top {
+    right: 0; left: 0; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .left-nav { 
+    width: 45px; 
+    position: fixed; 
+    left: 0; top: 0; 
+    height: 100%; 
+    overflow: hidden; 
+  }
+
+  body { 
+    padding-left: 45px; 
+  }
+
+  .navbar-fixed-top {
+    right: 0; 
+    left: 45px; 
+  }
+
+  .left-nav li span.glyphicon + span { 
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-fixed-top {
+    right: auto; left: auto; width: 60%; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .left-nav { 
+    width: 170px; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    height: 100%; 
+  }
+
+  body { 
+    padding-left: 170px; 
+  }
+
+  .content-wrapper { 
+    padding-left: 43px; 
+  }
+
+  .left-nav li span.glyphicon + span { 
+    display: inline;
+  }
+}
+
+.left-photo { 
+  position: fixed; 
+  height: 100%; 
+  background: url(?holder.js/460x900/social/text:left-photo-here);
+} 
+
+section { 
+  margin: 20px auto;
+  border-bottom: 1px dashed #CCC;
+}
+
+article {
+  margin-top: 60px; 
+  margin-left: 40px;
+}
+
+.navbar-fixed-top { 
+  background: #FFF; 
+}
+
+.navbar-fixed-top ul.navbar-nav > li.active {
+  border-bottom: 1px solid #000;
+}
+
+.navbar-fixed-top ul.navbar-nav > li.active > a {
+  background: none;
+}
+
+.left-nav ul > li.active > a { 
+  border-radius: 0; 
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); 
+  text-shadow: 0 1px 0 #000; 
+}
+.left-nav ul > li > a { 
+  text-shadow: 0 1px 0 #FFF; 
+}
+.left-nav { 
+  background-color: #EEE; 
+}
+
+.left-photo > .fix-bottom {
+  margin: 30px;
+  color: #FFF;
+  text-shadow: 0 1px 0 #000; 
+}

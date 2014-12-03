@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,57 +16,25 @@
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-      
-      .fix-bottom { position: absolute; bottom: 0; width: 100%; }
-
-      @media (max-width: 767px){
-        .left-nav { display: none; }
-        body { padding-left: 0px; }
-        .navbar-fixed-top {right: 0; left: 0; border-radius: 0;}
-      }
-
-      @media (min-width: 768px) and (max-width: 1199px) {
-        .left-nav { width: 45px; position: fixed; left: 0; top: 0; height: 100%; overflow: hidden; }
-        body { padding-left: 45px; }
-        .navbar-fixed-top {right: 0; left: 45px; border-radius: 0;}
-      }
-
-      @media (min-width: 992px) {
-        .navbar-fixed-top {right: auto; left: auto; width: 60%; border-radius: 8px;}
-      }
-
-      @media (min-width: 1200px) {
-        .left-nav { width: 170px; position: fixed; left: 0; top: 0; height: 100%; }
-        body { padding-left: 170px; }
-        .content-wrapper { padding-left: 43px; }
-      }
-
-      .left-photo { position: fixed; height: 100%; background: #CCC } 
-
-      section { margin-top: 60px; }
-
-    </style>
   </head>
   <body>
       <div class="left-nav">
         <ul class="nav nav-pills nav-stacked" role="tablist">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li><a href="#">Theme</a></li>
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> <span>Home</span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-th"></span> <span>Theme</span></a></li>
         </ul>
         <div class="fix-bottom">
           <ul class="nav nav-pills nav-stacked" role="tablist">
-            <li class="active"><a href="#">Display</a></li>
-            <li><a href="#">Login</a></li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-cog"></span> <span>Display</span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> <span>Login</span></a></li>
           </ul>
         </div>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 left-photo hidden-xs hidden-sm">
+        <div class="col-md-3 left-photo hidden-xs hidden-sm holderjs">
           <div class="fix-bottom">
-            description here<br/>
-            AAAAA
+            This is a photo
           </div>
         </div>
         <div class="col-md-offset-3 col-md-7 col-sm-10 content-wrapper">
@@ -110,32 +79,46 @@
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
           </nav>
-          <section>
-            <p> a line of article1</p>
-            <p> a line of article2</p>
-            <p> a line of article3</p>
-            <p> a line of article4</p>
-            <p> a line of article5</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
+          <article>
+            <section>
+              <h2>Sample blog post</h2>
+              <p class="text-muted">January 1, 2014 by <a href="#">Mark</a></p>
 
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-            <p> a line of article</p>
-          </section>
+              <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+              <hr>
+              <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+              <blockquote>
+                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </blockquote>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <h2>Heading</h2>
+              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <h3>Sub-heading</h3>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <pre><code>Example code block</code></pre>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+              <h3>Sub-heading</h3>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+              </ul>
+              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+              <ol>
+                <li>Vestibulum id ligula porta felis euismod semper.</li>
+                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+              </ol>
+              <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+            </section>
+          </article><!--
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+              <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+            </div>
+          </nav>
+        -->
         </div>
         </div>
       </div>
@@ -145,5 +128,6 @@
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="holder.js"></script>
   </body>
 </html>
