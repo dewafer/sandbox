@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Bootstrap 101 Template by dewafer</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -20,13 +20,13 @@
   <body>
       <div class="left-nav">
         <ul class="nav nav-pills nav-stacked" role="tablist">
-          <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> <span>Home</span></a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-th"></span> <span>Theme</span></a></li>
+          <li class="active"><a href="#" data-toggle="tooltip" data-placement="right" title="Home"><span class="glyphicon glyphicon-home"></span> <span>Home</span></a></li>
+          <li><a href="#" data-toggle="tooltip" data-placement="right" title="Theme"><span class="glyphicon glyphicon-th"></span> <span>Theme</span></a></li>
         </ul>
         <div class="fix-bottom">
           <ul class="nav nav-pills nav-stacked" role="tablist">
-            <li class="active"><a href="#"><span class="glyphicon glyphicon-cog"></span> <span>Display</span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> <span>Login</span></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Display"><span class="glyphicon glyphicon-cog"></span> <span>Display</span></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Login"><span class="glyphicon glyphicon-log-out"></span> <span>Login</span></a></li>
           </ul>
         </div>
     </div>
@@ -34,51 +34,54 @@
       <div class="row">
         <div class="col-md-3 left-photo hidden-xs hidden-sm holderjs">
           <div class="fix-bottom">
-            This is a photo
+            Here comes a photo.
           </div>
         </div>
         <div class="col-md-offset-3 col-md-7 col-sm-10 content-wrapper">
-          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Brand</a>
-                </div>
+          <header>
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+              <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">dewafer</a>
+                  </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="navbar-form navbar-left pull-right" role="search">
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search">
-                      <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                      </span>
-                    </div>
-                  </form>
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
-          </nav>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li><a href="#">Topics</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">One more separated link</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="navbar-form navbar-left pull-right" role="search">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                      </div>
+                    </form>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+          </header>
           <article>
             <section>
               <h2>Sample blog post</h2>
@@ -112,22 +115,25 @@
               </ol>
               <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
             </section>
-          </article><!--
-          <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-              <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
-            </div>
-          </nav>
-        -->
-        </div>
+          </article>
         </div>
       </div>
     </div>
+    <footer>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <p class="navbar-text navbar-right text-right hidden-xs">© Company 2014</p>
+            <p class="navbar-text navbar-right hidden-xs">Some.<a href="#" class="navbar-link">Links</a>.Here.</p>
+            <div class="navbar-header navbar-right pull-right"><a class="navbar-brand" href="#"><img alt"Brand" data-src="holder.js/20x20/sky/text:D"/></a></div>
+        </div>
+      </nav>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="holder.js"></script>
+    <script src="site.js"></script>
   </body>
 </html>
