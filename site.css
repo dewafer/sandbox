@@ -1,0 +1,13 @@
+.navbar {
+	margin-top: 46px;
+	text-shadow: 0 0 1px #FFF;
+}
+div.row.featurette {
+	text-shadow: 1px 0 0 #CCC;
+}
+div.row.featurette .btn {
+	text-shadow: none;
+}
+body > div.container > * {
+	display: none;
+}
